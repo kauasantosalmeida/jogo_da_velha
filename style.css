@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    background-color: #f0f8ff;
+}
+
+h2,
+h3 {
+    margin-top: -5;
+    text-align: center;
+    color: black;
+}
+
+#tela-escura {
+    width: 100%;
+    height: 100%;
+    opacity: 0.95;
+    color: white;
+    display: none;
+    padding-top: 80px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 240px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #2f4f4f;
+    border: 3px solid #add8e6;
+}
+
+#placar {
+    text-align: center;
+    margin: 10px auto;
+    padding: 5px 0;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    background-color: #4682b4;
+    border-radius: 5px;
+    border: 2px solid #add8e6;
+}
+
+.placar-jogadores {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    font-size: 18px;
+}
+
+.grid {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.celula {
+    width: 75px;
+    height: 65px;
+    font-size: 30pt;
+    margin: 4px 2px;
+    font-weight: bold;
+    padding-top: 10px;
+    border-radius: 3px;
+    text-align: center;
+    background-color: #add8e6;
+    transition: background-color 0.3s;
+}
+
+.celula.X {
+    color: #ffffff;
+}
+
+.celula.O {
+    color: #ffffff;
+}
+
+.celula:hover {
+    background-color: #87ceeb;
+}
+
+
+#tela-escura h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+#tela-escura h3 {
+    font-size: 18px;
+    color: #ffffff;
+}
